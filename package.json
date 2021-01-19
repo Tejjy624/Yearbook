@@ -1,0 +1,50 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "starter-react",
+  "version": "0.0.1",
+  "description": "A small scaffold to get you started using React with Webpack",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack && node server.js"
+  },
+  "dependencies": {
+    "jsx-loader": "^0.13.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.3",
+    "sqlite3": "^4.2.0",
+    "form-data": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.15.1",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "*",
+    "semantic-ui-react": "^0.88.2",
+    "react-infinite-scroll-component": "^5.0.5"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/starter-react"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

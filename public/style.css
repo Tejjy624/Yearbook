@@ -1,0 +1,375 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/**************
+    SPLASH
+***************/
+
+#main, #Splash {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#Splash {
+  position: relative;
+}
+
+#ClassText{
+  position: absolute;
+  font-weight: 600;
+  font-family: 'Spartan', sans-serif;
+  letter-spacing: 0.3em;
+  line-height: 1.2em;
+  font-size: 8vh;
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  margin-left: -30vh;
+  width: 60vh;
+}
+
+#FirstLayer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background-color: #fbf9ee;
+  font-size: 3.5vh;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#FirstLayer img{
+  position: absolute;
+  left: 5vh;
+  max-width: 15vh;
+}
+
+#PhotoLayer{
+  display: flex;
+  height: 60%;
+}
+
+#PhotoLayer img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#ThirdLayer{
+  display: flex;
+  height: 20%;
+  background-color: #fbf9ee;
+}
+
+#ThirdLayerLeft, #ThirdLayerRight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.SplashButton{
+  display: flex;
+  font-size: 3.5vh;
+  width: 30vh;
+  height: 7vh;
+  background-color: #4d4a43;
+  border: 5px black solid;
+  color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Abhaya Libre', serif;
+  cursor: pointer;
+}
+
+/*****************
+    SEARCH BAR
+******************/
+
+#Search{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#SearchLayer{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #fbf9ee;
+  font-size: 5.0vh;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  font-family: 'Spartan', sans-serif;
+  top: 50%;
+}
+.text{
+  position: absolute;
+  left: 38%;
+  font-size:50px; 
+  border-bottom: 9px dotted;
+}
+
+.Circle {
+  position: relative;
+  left: 40%;
+  border: 8px solid #B3A369;
+  height: 300px;
+  width: 300px;
+  border-radius:50%;
+}
+.Circle2{
+  position: absolute;
+  border: 8px solid #B3A369;
+  height: 260px;
+  width: 260px;
+  border-radius:50%;
+  left: 10px;
+  top: 10px;
+}
+
+.SearchBar{
+  position: absolute;
+  left: 25px;
+}
+
+#SearchLogo{
+  display: flex;
+  height: 10%;
+  background-color: #fbf9ee;
+}
+
+#SearchLogo img{
+  width: 13%;
+  height: 65%;
+  padding-left: 20px;
+}
+
+
+/**************
+    PROFILE
+***************/
+
+#Profile {
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-color: #fbf9ee;
+}
+
+#ProfileLeft{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+#ProfileRight{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+#UpdateProfileText{
+  position: absolute;
+  font-size: 5vh;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 600;
+  top: 10%;
+  left: 10%;
+}
+
+#ProfileImageWrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  height: 40%;
+}
+
+#ProfileImage{
+  display: flex;
+  height: 80%;
+  width: 100%;
+  border: 1vh #002855 solid;
+  overflow: hidden;
+}
+
+img#serverImage{
+    width: 100%;
+    object-fit: cover;
+}
+
+label#chooseImageButton{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 15%;
+    font-weight: bold;
+    font-size: 2.5vh;
+    bottom: 0%;
+}
+
+input#fileChooser{
+    display: none;
+}
+
+#ProfileLogo img{
+  position: absolute;
+  max-width: 25vh;
+  bottom: 5%;
+  left: 10%;
+}
+
+#ProfileDots{
+  position: absolute;
+  font-size: 5vh;
+  font-weight: bolder;
+  top: 15%;
+  left: 15%;
+}
+
+#ProfileBio{
+  position: absolute;
+  display: flex;
+  border: 1vh #002855 solid;
+  font-size: 3vh;
+  width: 90%;
+  height: 25%;
+  top: 22%;
+  overflow: hidden;
+  outline: none;
+  word-wrap: anywhere; 
+  overflow-wrap: anywhere;
+  white-space: break-spaces;
+  background-color: #fbf9ee;
+  font-family: serif;
+}
+
+#ProfileQuestionnaire{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1vh #002855 solid;
+  width: 90%;
+  height: 40%;
+  top: 50%;
+}
+
+#ProfileQuestionnaireTop{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 15%;
+  font-size: 3vh;
+}
+
+#ProfileQuestionnaireBottom{
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+#ProfileQuestionnaireName, #ProfileQuestionnaireMajor, #ProfileQuestionnaireCollege, #ProfileQuestionnaireGender, #ProfileQuestionnaireQuote{
+  font-size: 3vh;
+  border: 0.3vh #002855 solid;
+  width: 80%;
+  padding: 0.5vh;
+  margin: 0.5vh;
+  overflow: hidden;
+  outline: none;
+  white-space: nowrap;
+  background-color: #fbf9ee;
+  font-family: serif;
+}
+
+
+.ProfileStateButton{
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  justify-content: center;
+  align-items: center;
+  border: 5px black solid;
+  height: 5%;
+  width: 20%;
+  font-size: 2.5vh;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: 'Abhaya Libre', sans-serif;
+  z-index: 1;
+}
+
+/**************
+   RESULTS
+***************/
+
+#Result{
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-color: #fbf9ee;
+}
+
+#ResultDots{
+  position: absolute;
+  font-size: 5vh;
+  font-weight: bolder;
+  top: 15%;
+  left: 15%;
+}
+
+#ResultText{
+  position: absolute;
+  font-size: 5vh;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 600;
+  top: 10%;
+  left: 10%;
+}
+
+ #ResultRows{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 2px red solid;
+} 
+
+.Box{
+  width: 100px;
+  height: 100px;
+  border: 5px solid #002855;
+  padding: 60px;
+  position: absolute; 
+}
+
+.one{
+  border: 5px solid #002855;
+  z-index: 1;
+}
+.two{
+  border: 5px solid #002855;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
